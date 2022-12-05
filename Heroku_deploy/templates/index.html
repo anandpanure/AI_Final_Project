@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Final Project</title>
+</head>
+
+<body>
+    <div class="prediction">
+        <h1>Income Prediction</h1>
+        <form action="{{ url_for('predict')}}" method="post">
+            <label for="Day_1">Day_1</label>
+            <input type="number" id="Day_1" name="Day_1" required="required">
+            <br>
+            <label for="Day_2">Day_2</label>
+            <input type="number" id="Day_2" name="Day_2" required="required">
+            <br>
+            <label for="Day_3">Day_3</label>
+            <input type="number" id="Day_3" name="Day_3" required="required">
+            <br>
+            <label for="Day_4">Day_4</label>
+            <input type="number" id="Day_4" name="Day_4" required="required">
+            <br>
+            <label for="Day_5">Day_5</label>
+            <input type="number" id="Day_5" name="Day_5" required="required">
+            <br>
+            <label for="Day_6">Day_6</label>
+            <input type="number" id="Day_6" name="Day_6" required="required">
+            <br>
+            <label for="Day_7">Day_7</label>
+            <input type="number" id="Day_7" name="Day_7" required="required">
+            <br>
+            <label for="Day_8">Day_8</label>
+            <input type="number" id="Day_8" name="Day_8" required="required">
+            <br>
+            <label for="Day_9">Day_9</label>
+            <input type="number" id="Day_9" name="Day_9" required="required">
+            <br>
+            <label for="Day_10">Day_10</label>
+            <input type="number" id="Day_10" name="Day_10" required="required">
+            <br>
+            <label for="Day_11">Day_11</label>
+            <input type="number" id="Day_11" name="Day_11" required="required">
+            <br>
+            <label for="Day_12">Day_12</label>
+            <input type="number" id="Day_12" name="Day_12" required="required">
+            <br>
+            <label for="Day_13">Day_13</label>
+            <input type="number" id="Day_13" name="Day_13" required="required">
+            <br>
+            <label for="Day_14">Day_14</label>
+            <input type="number" id="Day_14" name="Day_14" required="required">
+            <br>
+            <label for="Day_15">Day_15</label>
+            <input type="number" id="Day_15" name="Day_15" required="required">
+            <br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <br>
+        <b>{{ prediction_text }}</b>
+    </div>
+</body>
+
+</html>
